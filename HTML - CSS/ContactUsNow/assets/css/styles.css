@@ -1,0 +1,300 @@
+/* Zera as margens, paddings e define a caixa de dimensionamento como sendo a borda */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define a fonte padrão para todo o body */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Define as propriedades para o container principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 100vh;
+    background-image: url("/assets/img/back.jpeg");
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 100%;
+    max-width: auto;
+    margin: 0 auto;
+}
+
+/* Define as propriedades para o container da imagem e sombra */
+.container-main {
+    display: flex;
+    box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Define as propriedades para o container da imagem */
+.container-img {
+    background-image: url("/assets/img/ft01.jpeg");
+    height: 600px;
+    width: 520px;
+}
+
+/* Define as propriedades para o container do formulário */
+.container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 500px;
+}
+
+/* Define as propriedades para o formulário em si */
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 300px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+/* Define as propriedades para cada grupo de input e label do formulário */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    min-width: 400px;
+}
+
+/* Define as propriedades para cada label do formulário */
+.form label {
+    font-size: 15px;
+    margin: 5px 0;
+    cursor: pointer;
+    justify-content: flex-start;
+}
+
+/* Define as propriedades para cada input do formulário */
+.form input {
+    height: 40px;
+    width: 400px;
+    border: 0.2px solid #999;
+    padding-left: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: white;
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Define as propriedades para cada input do formulário quando em foco */
+.form input:focus {
+    outline: none;
+    border: none;
+    border-bottom: 5px solid #414141;
+    transition: 0.1s;
+}
+
+/* Configurações de dimensão e estilo do textarea */
+.form textarea {
+    font-family: inherit;
+    max-height: 150px;
+    height: 40px;
+    width: 400px;
+    min-width: 400px;
+    max-width: 400px;
+    border: 0.2px solid #999;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Configurações de estilo do textarea quando em foco */
+.form textarea:focus {
+    outline: none;
+    border: none;
+    border-bottom: 5px solid #414141;
+    transition: 0.1s;
+}
+
+/* Configurações de estilo do botão */
+.form button {
+    font-size: 15px;
+    margin: 15px 0 0 0;
+    border: 0.8px solid #414141;
+    border-radius: 10px;
+    padding: 10px 30px;
+    background-color: transparent;
+
+}
+
+/* Configurações de estilo do botão quando o cursor do mouse está sobre ele */
+.form button:hover {
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+/* Define estilos para o footer da página */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: #333;
+    color: white;
+}
+
+/* Define estilos para os links dentro do footer */
+footer a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+/* Define estilos para o link quando o mouse passa por cima */
+footer a:hover {
+    text-decoration: underline;
+    color: rgb(117, 117, 117);
+}
+
+
+
+/* Estilos para telas com largura menor ou igual a 425px */
+@media (max-width: 425px) {
+    .container {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .container-main {
+        flex-direction: column;
+        width: 300px;
+        margin: 40px 0px;
+    }
+
+    .container-img {
+        height: 350px;
+        width: 100%;
+        background-position: top;
+    }
+
+    .container-form {
+        width: 100%;
+        padding: 20px;
+    }
+    .container-form h1{
+        font-size: 20px;
+        margin-bottom: auto;
+    }
+
+    .form{
+        margin-top: 10px;
+    }
+
+    .form-group {
+        max-width: 250px !important;
+        min-width: 250px !important;
+        width: 250px;
+    }
+
+    .form input {
+        width: 250px;
+        border: 0.2px solid #999;
+        box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.3);
+    }
+
+    .form textarea {
+        max-height: 70px;
+        min-height: 40px;
+        max-width: 250px;
+        min-width: 250px;
+        width: 250px;
+        height: 40px;
+        border: 0.2px solid #999;
+    }
+
+    .form button{
+        color: #000000;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+}
+
+/* Estilos para telas com largura entre 426px e 768px */
+@media (min-width: 426px) and (max-width: 768px) {
+    .container {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .container-main {
+        flex-direction: column;
+        width: 500px;
+        margin: 40px 0px;
+    }
+
+    .container-img {
+        height: 450px;
+        width: 100%;
+        background-position: top;
+    }
+
+    .form{
+        margin-top: 10px;
+    }
+
+    .form-group {
+        max-width: 400px;
+        min-width: 400px;
+    }
+
+    .container-form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form input {
+        border: 0.2px solid #999;
+        box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.3);
+    }
+
+    .form textarea {
+        width: 400px;
+        height: 40px;
+        max-height: 70px;
+        min-height: 40px;
+        border: 0.2px solid #999;
+    }
+
+    .form button{
+        color: #000000;
+    }
+
+    
+}
+
+/* Estilos para telas com largura maior que 768px */
+@media (min-width: 769px) {
+    .container {
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: auto;
+    }
+
+    .container-main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .form textarea {
+        width: 400px;
+        height: 40px;
+        max-height: 150px;
+        min-height: 40px;
+    }
+}
