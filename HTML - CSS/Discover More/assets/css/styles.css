@@ -1,0 +1,245 @@
+/* Zera as margens, paddings e define a caixa de dimensionamento como sendo a borda */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define a fonte padrão para todo o body */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Define a classe container como um container flexível para centralizar elementos */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Define a classe container-main para o elemento principal da página e aplica algumas propriedades de estilo */
+.container-main {
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(242, 242, 242);
+}
+
+/* Define a classe container-form como um container flexível para centralizar elementos em seu interior */
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Define a classe form-group como um elemento de bloco em linha */
+.form-group {
+    display: inline-block;
+}
+
+/* Define a classe img-form como uma imagem de tamanho mínimo de 527px e aplica alguns estilos de sombra */
+.img-form {
+    min-width: 527px;
+    width: 100%;
+    height: 492px;
+    margin-top: -55px;
+    box-shadow: 5px 5px 17px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Define estilos para o título h2 dentro do container-form */
+.container-form h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 52.8px;
+}
+
+/* Define estilos para o parágrafo dentro do container-form */
+.container-form p {
+    font-size: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 32px;
+}
+
+/* Define a classe form como um formulário flexível e centralizado */
+.form {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    min-width: 650px;
+    width: 100%;
+}
+
+/* Define estilos para os inputs dentro da classe form-group */
+.form-group input {
+    border: 1px solid rgb(179, 179, 179);
+    cursor: text;
+    height: 48px;
+    width: 275px;
+    line-height: 26px;
+    padding: 10px 12px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* Define estilos para o input que está com o foco */
+.form-group input:focus {
+    outline-color: mediumseagreen;
+}
+
+/* Define estilos para o botão dentro da classe form */
+.form button {
+    border: none;
+    border-bottom: 2px solid black;
+    letter-spacing: 4px;
+    line-height: 26px;
+    text-transform: uppercase;
+    height: 25px;
+    transition: all 300ms ease-in-out;
+    background-color: transparent;
+    color: black;
+}
+
+/* Define estilos para o botão quando o mouse passa por cima */
+.form button:hover {
+    cursor: pointer;
+    color: mediumseagreen;
+    border-bottom: 2px solid mediumseagreen;
+}
+
+/* Define estilos para o footer da página */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: #333;
+    color: white;
+}
+
+/* Define estilos para os links dentro do footer */
+footer a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+/* Define estilos para o link quando o mouse passa por cima */
+footer a:hover {
+    text-decoration: underline;
+    color: mediumseagreen;
+}
+
+/* Estilos para telas com largura menor ou igual a 425px */
+@media (max-width: 425px) {
+    .container {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .container-main {
+        flex-direction: column;
+        width: 100%;
+        min-width: auto;
+    }
+
+    .container-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-form h2 {
+        font-size: 20px;
+
+    }
+
+    .container-form p {
+        font-size: 11px;
+
+    }
+
+    .img-form {
+        max-width: 250px;
+        min-width: 250px;
+        max-height: 250px;
+        height: 200px;
+        width: 200px;
+    }
+
+    .form {
+        flex-direction: column;
+    }
+
+    .form input {
+        margin-bottom: 10px;
+        width: 250px;
+    }
+
+    .form-group input:focus {
+        outline-color: mediumseagreen;
+    }
+
+    .form button {
+        background-color: transparent;
+        color: inherit;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+
+}
+
+/* Estilos para telas com largura entre 426px e 768px */
+@media (min-width: 426px) and (max-width: 768px) {
+    .container {
+        height: auto;
+        width: auto;
+        overflow: hidden;
+    }
+
+    .container-main {
+        flex-direction: column;
+        min-width: 426px;
+        width: 100%;
+    }
+
+    .container-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .container-form h2 {
+        font-size: 45px;
+    }
+
+    .form {
+        flex-direction: column;
+    }
+
+    .form input {
+        width: 400px;
+        margin-bottom: 10px;
+    }
+
+    .form-group input:focus {
+        outline-color: mediumseagreen;
+    }
+
+    .form button {
+        background-color: transparent;
+        color: inherit;
+    }
+
+}
