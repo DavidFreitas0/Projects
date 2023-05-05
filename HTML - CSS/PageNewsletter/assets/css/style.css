@@ -1,0 +1,297 @@
+/* Define o estilo básico para todos os elementos da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Doppio One', sans-serif;
+}
+
+/* Define o estilo para os títulos principais */
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+}
+
+/* Define o estilo para os parágrafos de texto */
+p, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/* Define o estilo para os parágrafos de texto */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 30px 100px;
+    background-image: url(/assets/img/bg.jpg);
+    background-size: cover;
+    background-size: 110% 110%;
+}
+
+/* Define o estilo para o contêiner principal da seção de conteúdo */
+.container-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Define estilos para o elemento 'h2' dentro de um elemento com a classe 'container-main' */
+.container-main h2 {
+    font-size: 68px;
+    line-height: 79.2px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Define estilos para o elemento 'h3' dentro de um elemento com a classe 'container-main' */
+.container-main h3 {
+    margin-right: 510px;
+    margin-top: 30px;
+    font-size: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Define estilos para um elemento com a classe 'form' */
+.form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Define estilos para o elemento 'input' dentro de um elemento com a classe 'form' */
+.form input {
+    padding: 10px 12px;
+    border: 1px solid #b3b3b3;
+    height: 54px;
+    width: 330px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(128, 128, 128);
+}
+
+/* Define estilos para o placeholder do elemento 'input' dentro de um elemento com a classe 'form' */
+.form input::placeholder {
+    color: rgba(179, 179, 179, 0.7);
+}
+
+/* Define estilos para o elemento 'input' dentro de um elemento com a classe 'form' quando ele está focado */
+.form input:focus {
+    outline: none;
+    outline-color: rgb(128, 128, 128);
+}
+
+/* Define estilos para um elemento com a classe 'freepik' */
+.freepik {
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+/* Define estilos para o elemento 'freepik' quando o cursor está sobre ele */
+.freepik:hover {
+    border-bottom-color: #fb6732;
+}
+
+/* Define estilos para o elemento 'button' dentro de um elemento com a classe 'form' */
+.form button {
+    display: flex;
+    padding: 10px 40px;
+    background-color: #fb6732;
+    border: none;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 32px;
+    font-size: 20px;
+    width: 233px;
+    height: 54px;
+}
+
+/* Define estilos para o elemento 'button' dentro de um elemento com a classe 'form' quando o cursor está sobre ele */
+.form button:hover {
+    background-color: #000000;
+}
+
+/* Define estilos para o elemento 'p' dentro de um elemento com a classe 'container-main' */
+.container-main p {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* Define o estilo para o rodapé da página */
+footer {
+    font-size: 16px;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #333;
+    color: #FFFFFF;
+}
+
+/* Define o estilo para os links no rodapé */
+footer a {
+    text-decoration: none;
+    color: #fb6732;
+}
+
+/* Define o estilo para os links no rodapé quando o cursor do mouse está sobre eles */
+footer a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #fb68329d;
+    transition: all 300ms ease-in-out;
+    font-size: 16.3px;
+}
+
+/* Estilos para telas com largura até 425px*/
+@media (max-width: 425px) {
+    .container {
+        width: auto;
+        overflow: hidden;
+        padding: 30px 30px;
+        background-size:cover;
+    }
+
+    .container-main {
+        align-items: center;
+    }
+
+    .container-main h2 {
+        text-align: center;
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .container-main h3 {
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .form{
+        flex-direction: column;
+        align-items: center;
+    }
+    .form input {
+        max-width: 180px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .form button {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 30px;
+        font-size: 10px;
+        padding: 5px 10px;
+        line-height: 0;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
+
+/* Estilos para telas com largura entre 426px e 768px */
+@media (min-width: 426px) and (max-width: 768px) {
+    .container {
+        width: auto;
+        overflow: hidden;
+        background-size: cover;
+    }
+
+    .container-main {
+        align-items: center;
+    }
+
+    .container-main h2 {
+        text-align: center;
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .container-main h3 {
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .form input {
+        max-width: 220px;
+        height: 40px;
+        font-size: 10px;
+    }
+
+    .form button {
+        text-align: center;
+        justify-content: center;
+        max-width: 150px;
+        width: 100%;
+        height: 40px;
+        font-size: 10px;
+        padding: 5px 20px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
+
+/* Estilos para telas com largura entre 769px e 1024px */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: auto;
+        overflow: hidden;
+        background-size: cover;
+    }
+
+    .container-main {
+        align-items: center;
+    }
+
+    .container-main h2 {
+        text-align: center;
+    }
+
+    .container-main h3 {
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .form input {
+        max-width: 220px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .form button {
+        text-align: center;
+        justify-content: center;
+        max-width: 150px;
+        width: 100%;
+        height: 40px;
+        font-size: 13px;
+        padding: 5px 20px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}
