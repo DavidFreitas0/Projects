@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/cadastro.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Open+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <title id="titulo-aba">Nova Transação</title>
+</head>
+
+<body>
+    <div class="div-geral" id="div-geral">
+        <section class="container-form" id="container-form">
+            <header class="cabecalho" id="cabecalho">
+                <h1 id="logo"><a href="./home.html">Controle de Gastos</a></h1>
+                <ul id="links-cabecalho">
+                    <li><a href="./home.html" aria-selected="true">Home</a></li>
+                    <li><a href="./historico.html">Histórico</a></li>
+                    <li><a href="./cadastro.html">Nova Transação</a></li>
+                </ul>
+            </header>
+            <div class="container-panels" id="container-panels">
+                <div id="div-entrada" class="div-entrada div-valores">
+                    <h4>Entrada</h4>
+                    <p class="pEntrada">R$ 0.00</p>
+                </div>
+                <div id="div-saldo" class="div-saldo div-valores">
+                    <h4>Saldo</h4>
+                    <p class="pSaldo">R$ 0.00</p>
+                </div>
+                <div id="div-saida" class="div-saida div-valores">
+                    <h4>Gastos</h4>
+                    <p class="pSaida">R$ 0.00</p>
+                </div>
+            </div>
+            <div class="container-main-cadastro" id="container-main-cadastro">
+                <div class="form-cadastro-main" id="form-cadastro-main">
+                    <div class="resultado" id="resultado"></div>
+                    <form action="submit" id="form-transacao" class="form-transacao">
+                        <h2>Nova Transação</h2>
+                        <div class="form-group">
+                            <input type="text" id="titulo" class="form-control" placeholder="Título">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="descricao" class="form-control" placeholder="Descrição">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="valor" class="form-control" placeholder="Valor">
+                        </div>
+                        <div class="form-group">
+                            <input type="date" id="data" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <select id="categoria" class="form-control">
+                                <option value="" selected disabled>Selecione uma Categoria</option>
+                                <option value="Alimentação">Alimentação</option>
+                                <option value="Educação">Educação</option>
+                                <option value="Lazer">Lazer</option>
+                                <option value="Transporte">Transporte</option>
+                                <option value="Outros">Outros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="tipo" class="form-control">
+                                <option value="" selected disabled>Selecione um Tipo de Transação</option>
+                                <option value="Entrada">Déposito (Entrada)</option>
+                                <option value="Saida">Gasto (Saída)</option>
+                            </select>
+                        </div>
+                        <button type="submit" id="submit-form">Cadastrar Transação</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="rodape" id="rodape">
+            <p id="info-rodape">Desenvolvido por <a href="http://github.com/DavidFreitas0" target="_blank">David
+                    Freitas</a></p>
+        </footer>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+.container-main-historico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    overflow: hidden;
+
+}
+
+.container-main-historico h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.container-table {
+    margin-top: 10px;
+    background-color: #026c62;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.container-table:hover {
+    overflow: auto;
+}
+
+#tabela-historico {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#tabela-historico th,
+td {
+    text-align: left;
+}
+
+#tabela-historico th {
+    padding: 5px 10px;
+}
+
+#tabela-historico td {
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 3px 10px;
+    max-width: 200px;
+    word-break: break-all;
+}
+
+.apagar {
+    width: max-content;
+    padding: 3px;
+    margin-left: 2px;
+    font-size: 10px;
+    color: white;
+    background-color: rgb(180, 23, 23);
+    border: 1px solid rgb(252, 252, 252);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 150ms;
+}
+
+.apagar:hover {
+    width: max-content;
+    color: rgb(180, 23, 23);
+    background-color: #fff;
+}
+
+.mensagem {
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(2, 108, 98);
+    color: #fff;
+    width: 450px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 160px;
+}
+
+.container-pesquisa {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.pesquisar-categoria {
+    width: 85px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #FFF;
+}
+
+.pesquisar-categoria:focus {
+    outline: none;
+    background-color: #333;
+    border: none;
+    border-bottom: 1px solid #333;
+}
+
+.input-pesquisa {
+    width: 150px;
+    margin-left: 5px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    padding-left: 5px;
+}
+
+.input-pesquisa::placeholder {
+    color: #ffffffaf;
+}
+
+.input-pesquisa:focus {
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+}
+
+.pesquisa-sem-resultado {
+    display: none;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.submit-pesquisa {
+    border: none;
+    background-color: transparent;
+    padding: 0 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.submit-pesquisa:hover {
+    color: #333;
+    border-bottom: 1px solid #333;
+}

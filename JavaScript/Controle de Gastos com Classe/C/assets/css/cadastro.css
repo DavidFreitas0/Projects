@@ -1,0 +1,97 @@
+.container-form {
+    width: 100%;
+    background-color: #08a094;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+}
+
+.container-main-cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-main-cadastro h2 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.form-cadastro-main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-control {
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.form-cadastro-main button {
+    width: 150px;
+    border-radius: 10px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-cadastro-main button:hover {
+    color: red;
+}
+
+.form-transacao {
+    background-color: rgb(2, 108, 98);
+    border-radius: 10px;
+    width: 370px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.campo-invalido {
+    border: 2px solid #a10000;
+}
+
+.resultado-invalido{
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+    font-size: 14px;
+    background-color: red;
+    margin-bottom: 5px;
+}
+
+.resultado-valido{
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+    font-size: 15px;
+    background-color: #239702;
+}
+
+.error-text{
+    font-size: 12px;
+    color: #a10000;
+    padding-left: 5px;
+    font-weight: 600;
+}
